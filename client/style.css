@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+* {
+    font-family: 'Poppins',sans-serif !important;
+    padding: 0;
+    margin: 0;
+}
+body {
+    height: 100%;
+    overflow-y: hidden;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+ }
+
+.back-btn{
+    padding: 6px 8px;
+    position: absolute;
+    left: 0;
+    margin-left: 10px !important;
+    margin-top: 20px !important;
+    top: 0;
+    cursor: pointer;
+    width: calc();
+    font-weight: bold;
+    margin: 15px auto;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 12px;
+    color: aliceblue;
+    background-color: green;
+    border: 3px solid  #95A5A6 ;
+    box-shadow: 0 0 15px yellow;
+}
+.fullscr-btn{
+    padding: 6px 8px;
+    cursor: pointer;
+    width: calc();
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 10px !important;
+    margin-top: 20px !important;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 12px;
+    color: aliceblue;
+    background-color: green;
+    border: 3px solid  #95A5A6 ;
+    box-shadow: 0 0 15px yellow;
+
+}
+.home-box{
+    display: flex;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    height: 100vh !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('./assets/ass/home-bg-new.jpg');
+    background-size: cover;
+
+}
+
+.btnnn{
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 20px;
+    color: aliceblue;
+    background-color: #17202A ;
+    border: 5px solid  #95A5A6 ;
+    box-shadow: 0 0 20px yellow;
+    text-shadow: 0 0 3px yellow;
+}
+
+.join-btn{
+    padding: 6px 8px;
+    cursor: pointer;
+    width: 80%;
+    font-weight: bold;
+    margin: 15px auto;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 12px;
+    color: aliceblue;
+    background-color: green;
+    border: 3px solid  #95A5A6 ;
+    box-shadow: 0 0 15px yellow;
+    /* text-shadow: 0 0 3px yellow; */
+}
+.hidden{
+    display: none !important
+}
+.IDdiv{
+    margin-top: 40px;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    width: 300px;
+    text-align: center;
+    height: 250px;
+    background-color: #17202A ;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+}
+.IDdiv input{
+    width: 80%;
+    height: 50px;
+    margin: auto;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: red;
+    border: 8px ridge rgb(1, 158, 255);
+}
+.ID-span{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: aliceblue;
+}
+.btn-div{
+    display: flex;
+    text-align: center;
+    justify-content:space-around;
+    gap: 40px;
+    flex-direction: row;
+}
+.full-width{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+}
+/* Waiting Area div css */
+.waitingArea-div{
+    display: flex;
+    margin: 0;
+    width: 100vw;
+    height: 100vh !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('./assets/ass/home-bg-new.jpg');
+    background-size: cover;
+}
+
+.IDdiv-wa{
+    margin-top: 40px;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    width: 300px;
+    text-align: center;
+    height: calc();
+    background-color: #17202A ;
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+}
+.wa-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: calc();
+}
+.wa-TopHead{
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: aliceblue;
+    padding: 20px 10px;
+}
+.wa-MidHead{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: aliceblue;
+    padding: 20px 10px;
+}
+
+.wa-Span{
+    color: red;
+    font-size: 1.5rem;
+    padding: 2px 4px;
+    background-color: #17202A;
+    border: 4px ridge aliceblue;
+    opacity: 1 !important;
+    border-radius: 10px;
+}
+
+.copy-btn{
+    padding: 6px 8px;
+    cursor: pointer;
+    width: calc();
+    font-weight: bold;
+    margin: 15px auto;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 12px;
+    color: aliceblue;
+    background-color: green;
+    border: 3px solid  #95A5A6 ;
+    box-shadow: 0 0 15px yellow;
+    /* text-shadow: 0 0 3px yellow; */
+}
+
+/* game Area div styles */
+.gameArea-div{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./assets/ass/bg_23.jpg');
+}
+
+.you-opp-div{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    top: 10%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-div{
+    display: flex;
+    justify-content: start;
+    width: 40%;
+    height: calc();
+}
+
+.left-div h2{
+    color: green;
+    font-weight: bold;
+    text-shadow: 0 0 2px white;
+}
+.right-div{
+    display: flex;
+    justify-content: end;
+    width: 40%;
+    height: calc();
+}
+.right-div h2{
+    color: red;
+    font-weight: bold;
+    text-shadow: 0 0 2px white;
+}
+.mid-div{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    height: calc();
+}
+.bottom-div{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    width: 100%;
+    height: calc();
+}
+.bottom-div-ele{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 60%;
+    margin: auto;
+    height: calc();
+}
+.rock {
+    /* background: url(./assets/ass/left-stone.png); */
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.p-class{
+    background-color: #17202A;
+    border: 3px ridge yellow;
+}
+
+.paper {
+    /* background: url(./assets/ass/left-paper.png); */
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.scissor {
+    /* background: url(./assets/ass/left-scissor.png); */
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+img{
+    object-fit: contain;
+    filter: drop-shadow(0 0 3px yellow);
+}
+
+.bottom-div-ele button span{
+    width: 50px;
+    height: 50px;
+}
+
+.title {
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+
+/* Modal */
+.custom-modal {
+    display: block; /* Ensure the modal is displayed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  }
+  .custom-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .modal-div{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color:transparent;
+  }
+
+  .modal-content-div{
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #17202A;
+    flex: 1 0 550px;
+    flex-wrap: wrap;
+  }
+
+  .modal-head{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: aliceblue;
+  }
+
+  .modal-winner{
+    font-size: 1.8rem;
+    color: orange;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  .modal-btn-div{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-btn{
+    padding: 6px 8px;
+    border-radius: 12px;
+    border: 3px solid white;
+    color: white;
+    background-color: red;
+    font-size: 1.2rem;
+    width: calc();
+    margin: auto;
+    cursor: pointer;
+  }
+
+  .modal-btn:hover{
+    box-shadow: 0 0 15px red;
+
+  }
+
+
+  /* Result */
+  .result-p1{
+    display: flex;
+    background-color: transparent !important;
+    width: 30% !important;
+    border-radius: 50% !important;
+    border: 2px transparent !important;
+    height: 30% !important;
+    padding: 10px !important;
+    margin: auto !important;
+    position: absolute;
+    left: 15%;
+    top: 30%;
+  }
+
+  .res-img1{
+    width: 20vw !important;
+    height: 30vh !important;
+    padding: 10px !important;
+    animation: bounce 4s infinite cubic-bezier(0.5, 0.05, 0.1, 0.3);
+    transform-origin: bottom;
+  }
+  .res-img2{
+    width: 20vw !important;
+    height: 30vh !important;
+    padding: 10px !important;
+    animation: bounce 4s infinite cubic-bezier(0.5, 0.05, 0.1, 0.3);
+    transform-origin: bottom;
+  }
+  h2{
+    color: aliceblue;
+    font-size: 2.3rem;
+    padding: 10px 20px;
+    font-weight: bolder;
+  }
+  #opponentState{
+    color: aliceblue;
+    font-size: 2.5rem;
+    padding: 10px;
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+    font-weight: bold;
+  }
+
+  .mid-div-img{
+    width: 200px;
+    height: calc();
+    filter: drop-shadow(0 0 20px yellow);
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-100px);
+    }
+  }
+
+  .result-p2{
+    display: flex;
+    background-color: transparent !important;
+    width: 30% !important;
+    border-radius: 50% !important;
+    border: 2px transparent !important;
+    height: 30% !important;
+    padding: 10px !important;
+    margin: auto !important;
+    position: absolute;
+    right: 15%;
+    top: 30%;
+  }
+
+  /* Confetti */
+  #confetti{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+/* responsiveness for Mobile devices */
+@media screen and (max-width:881px){
+    .fullscr-btn,.btnnn,.join-btn,.back-btn{
+        width: calc();
+        font-size: 1rem;
+        padding: 4px 8px;
+    }
+    h1{
+        font-size: 1.5rem !important;
+    }
+    h2{
+        font-size: 1.2rem !important;
+    }
+    #opponentState{
+        font-size: 1rem;
+    }
+
+    .bottom-div-ele img{
+        width: 40px;
+    }
+    .p-class{
+        width: 70px !important;
+        height: 70px !important;
+    }
+    .left-div h2, .right-div h2{
+        position: absolute;
+        top: 15%;
+    }
+    .res-img1, .res-img2{
+        animation: bounce 6s infinite cubic-bezier(0.5, 0.05, 0.1, 0.3);
+    }
+
+
+
+    
+}
