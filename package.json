@@ -1,18 +1,20 @@
 {
-  "homepage": "https://shantanuj2002.github.io/Rock-Paper-Scissor/",
   "name": "sps",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "netlify deploy --prod"
   },
   "author": "Shantanu Joshi",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "netlify-cli": "^16.2.0",
+    "netlify-lambda": "^2.0.16",
     "ngrok": "^5.0.0-beta.2",
     "nodemon": "^3.0.1",
+    "serverless-http": "^3.2.0",
     "socket.io": "^4.7.2"
   }
 }

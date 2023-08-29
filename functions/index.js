@@ -10,9 +10,6 @@ const rooms = {};
 
 app.use(express.static(path.join(__dirname, 'client')));
 
-app.get('/healthcheck', (req, res) => {
-    res.send('<h1>RPS App running...</h1>');
-});
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/client/index.html');
