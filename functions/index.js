@@ -12,7 +12,7 @@ const router=express.Router();
 
 const rooms = {};
 app.use(cors());
-app.use(express.static(path.join(__dirname, '../client')));
+router.use(express.static(path.join(__dirname, '../client')));
 
 module.exports.handler=serverless(app);
 
