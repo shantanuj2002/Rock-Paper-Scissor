@@ -12,6 +12,8 @@ const rooms = {};
 
 app.use(express.static(path.join(__dirname, '../client')));
 
+app.use('./netlify/functions/index',router);
+module.exports.handler=serverless(app);
 
 app.get('/', (req, res) => {
     res.sendFile('../client/index.html');
@@ -103,5 +105,3 @@ function makeid(length) {
     return result;
 }
 
-app.use('./netlify/functions/index',router);
-module.exports.handler=serverless(app);
