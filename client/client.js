@@ -1,5 +1,4 @@
 console.log("client.js executing");
-
 const socket = io();
 let roomUniqueId = null;
 let player1 = false;
