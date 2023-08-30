@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "./node_modules/.bin/netlify-lambda build client"
+    "build": "index.js"
   },
   "author": "Shantanu Joshi",
   "license": "ISC",
