@@ -1,26 +1,24 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const serverless=require('serverless-http');
 const http = require('http');
 const path = require('path');
 const server = http.createServer(app);
 const { Server } = require("socket.io");
+const { appendFile } = require('fs');
 const io = new Server(server);
-const router=express.Router();
+
 
 
 const rooms = {};
-app.use(cors());
-router.use(express.static(path.join(__dirname, '../client')));
+app.use(express.static(path.join(__dirname, './client')));
 
-module.exports.handler=serverless(app);
 
-router.get('/', (req, res) => {
-    res.sendFile('../client/index.html');
+app.get('/', (req, res) => {
+    res.sendFile('./client/index.html');
 });
 
-app.use("./netlify/functions/index",router);
+
 
 io.on('connection', (socket) => {
     console.log('a user connected');
@@ -108,5 +106,3 @@ function makeid(length) {
     return result;
 }
 
-module.exports = app;
-module.exports.handler = serverless(app);
