@@ -205,7 +205,7 @@ function createOpponentChoiceButton(data) {
     opponentButton.id = 'opponentButton';
     opponentButton.classList.add(data.rpsValue.toString().toLowerCase(),'result-p2');
     opponentButton.style.display = 'none';
-    opponentButton.innerHTML = `<img src="./assets/ass/${data.rpsValue}.png" class="res-img2"/>` ;
+    opponentButton.innerHTML = `<img src="./assets/ass/${data.rpsValue.toString().toLowerCase()}.png" class="res-img2"/>` ;
     document.getElementById('player2Choice').appendChild(opponentButton);
 }
 
