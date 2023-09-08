@@ -177,7 +177,7 @@ function sendChoice(rpsValue) {
     let playerChoiceButton = document.createElement('button');
     playerChoiceButton.style.display = 'block';
     playerChoiceButton.classList.add(rpsValue.toString().toLowerCase(),'result-p1');
-    playerChoiceButton.innerHTML = `<img src="./assets/ass/${rpsValue}.png" class="res-img1"/>`;
+    playerChoiceButton.innerHTML = `<img src="./assets/ass/fist_2417975.png" class="res-img1"/>`;
     // document.getElementById('myChoice').innerHTML = "You";
     document.getElementById('myChoice').appendChild(playerChoiceButton);
 
