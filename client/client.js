@@ -60,7 +60,7 @@ function openFullscreen() {
 
 function closeFullscreen() {
     let scrElebtn = document.getElementById('full-btn');
-    scrElebtn.innerHTML = "Enable Full Screen";
+    scrElebtn.innerHTML = "⏹️";
     if (document.exitFullscreen && isFull == true) {
       document.exitFullscreen();
     } else if (document.webkitExitFullscreen && isFull == true) { /* Safari */
