@@ -7,9 +7,9 @@ const server = http.createServer(app);
 const { Server } = require("socket.io");
 const { appendFile } = require('fs');
 const io = new Server(server);
+const PORT=process.env.PORT || 3000;
 
-
-
+app.use(cors);
 const rooms = {};
 app.use(express.static(path.join(__dirname, './client')));
 
@@ -17,8 +17,6 @@ app.use(express.static(path.join(__dirname, './client')));
 app.get('/', (req, res) => {
     res.sendFile('./client/index.html');
 });
-
-
 
 io.on('connection', (socket) => {
     console.log('a user connected');
@@ -92,7 +90,7 @@ function declareWinner(roomUniqueId) {
     rooms[roomUniqueId].p2Choice = null;
 }
 
-server.listen(3000, () => {
+server.listen(PORT, () => {
     console.log('listening on *:3000');
 });
 
